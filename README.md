@@ -2,6 +2,24 @@
 
 A reproducible simulation study comparing temporal forecasting, autoencoder anomaly features, graph adjustment and active learning for a 20-segment Lagos study network.
 
+## Full reviewer-requested benchmarks
+
+The completed extension includes **STGCN, DCRNN and Graph WaveNet**, each fitted across the same five seeds. Read [the benchmark report](REVIEWER_BENCHMARK_RESULTS.md), [the fixed protocol](BENCHMARK_PROTOCOL.md), and [the draft reviewer response](REVIEWER_1_BENCHMARK_RESPONSE.md).
+
+| Full architecture | Validation accuracy (%) | Validation MAE, 0-100 index | Validation RMSE, 0-100 index |
+| --- | ---: | ---: | ---: |
+| STGCN | 73.9881 +/- 0.7274 | 4.6555 +/- 0.0259 | 6.2913 +/- 0.0078 |
+| DCRNN | 73.6774 +/- 0.4017 | 4.6942 +/- 0.0253 | 6.3021 +/- 0.0122 |
+| Graph WaveNet | 73.8642 +/- 0.3388 | 4.7072 +/- 0.0393 | 6.3481 +/- 0.0126 |
+
+The extension contains 15 fitted full-architecture checkpoints, 30 prediction files, matched CPU model profiling and seven passing architecture/artifact checks. The primary comparison uses fixed validation; reuse of the earlier temporal holdout is labeled retrospective supplementary evaluation. Original study results and selection remain recorded below.
+
+```powershell
+.venv/Scripts/python.exe run_reviewer_benchmarks.py --prepare
+.venv/Scripts/python.exe -u run_reviewer_benchmarks.py
+.venv/Scripts/python.exe validate_reviewer_benchmarks.py
+```
+
 ## Results
 
 The experiment uses a fixed reconstructed simulation dataset and five model seeds: **42, 123, 456, 789, 1024**. A pre-specified validation-MAE rule selected the plain LSTM for final temporal evaluation.

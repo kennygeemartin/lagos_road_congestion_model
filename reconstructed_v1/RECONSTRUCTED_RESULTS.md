@@ -114,7 +114,7 @@ The simulated oracle supplies congestion targets calculated from generated volum
 
 AE metrics quantify agreement with the hourly proxy rule. Validation contains **4 proxy positives among 11,780 node-hours**. Recall was high, while low precision and F1 show that the fixed 0.015 threshold generated many additional alerts. These findings identify threshold calibration and richer anomaly scenarios as priorities for further development.
 
-STGCN-lite uses one temporal-gated / first-order graph / temporal-gated block with 32 channels. Two width-three temporal kernels and latest-position readout yield a five-hour effective receptive field. It is a reduced architectural comparator evaluated on validation data; broader benchmarking would require full-scale STGCN, DCRNN and Graph WaveNet implementations.
+STGCN-lite uses one temporal-gated / first-order graph / temporal-gated block with 32 channels. Two width-three temporal kernels and latest-position readout yield a five-hour effective receptive field. It is a reduced architectural comparator evaluated on validation data; The full STGCN, DCRNN and Graph WaveNet comparisons are now reported in the root-level `REVIEWER_BENCHMARK_RESULTS.md`.
 
 | Model | Validation accuracy (%) | MAE (index) | RMSE (index) |
 |---|---:|---:|---:|
@@ -145,3 +145,7 @@ Detailed comparisons appear in `results/claim_support_matrix.csv`, `ablation/pai
 The release includes the fixed protocol and SHA256 hashes, model-ready dataset, trained checkpoints, seed-specific predictions, epoch logs, evaluation tables and figures. Validation predictions cover all comparisons; test predictions cover the selected configuration. These materials are packaged locally in `Reconstructed_Study_Results_and_Reproducibility.zip`. Public deposition and a permanent identifier remain future release steps.
 
 The present evaluation covers forecasting, anomaly scoring, graph adjustment, acquisition and model-inference timing. Dashboard injection tests and routing-event benchmarks require a separate application-level evaluation using the corresponding source code and event logs.
+
+## Full-architecture benchmark extension
+
+The reviewer-requested STGCN, DCRNN and Graph WaveNet comparisons are complete: 15 full-architecture fits, 30 prediction files and seven additional checks. The root-level `REVIEWER_BENCHMARK_RESULTS.md` reports their methods, paired comparisons and matched CPU timings. STGCN achieved validation MAE 4.6555 +/- 0.0259, DCRNN 4.6942 +/- 0.0253 and Graph WaveNet 4.7072 +/- 0.0393 index points. MAE differences between A1 and each benchmark were not significant after Holm correction. The extended comparison retains the original A1 selection and labels reuse of the previously examined temporal test as retrospective.

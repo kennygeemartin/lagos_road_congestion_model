@@ -40,6 +40,10 @@ def polish(text):
                 lines[i]=replacement
                 break
     text="\n".join(lines)+"\n"
+    if Path('REVIEWER_BENCHMARK_RESULTS.md').exists():
+        text=text.replace('broader benchmarking would require full-scale STGCN, DCRNN and Graph WaveNet implementations.', 'The full STGCN, DCRNN and Graph WaveNet comparisons are now reported in the root-level `REVIEWER_BENCHMARK_RESULTS.md`.')
+        if '## Full-architecture benchmark extension' not in text:
+            text += "\n## Full-architecture benchmark extension\n\nThe reviewer-requested STGCN, DCRNN and Graph WaveNet comparisons are complete: 15 full-architecture fits, 30 prediction files and seven additional checks. The root-level `REVIEWER_BENCHMARK_RESULTS.md` reports their methods, paired comparisons and matched CPU timings. STGCN achieved validation MAE 4.6555 +/- 0.0259, DCRNN 4.6942 +/- 0.0253 and Graph WaveNet 4.7072 +/- 0.0393 index points. MAE differences between A1 and each benchmark were not significant after Holm correction. The extended comparison retains the original A1 selection and labels reuse of the previously examined temporal test as retrospective.\n"
     return text.replace("# New reconstructed-data simulation: measured revision results", "# Traffic-congestion forecasting: experimental methods and results").replace("## Main revision finding", "## Principal findings").replace("## Locked study and data accounting", "## Study design and data").replace("## Actual software timing", "## Inference performance").replace("## Statistics and claim support", "## Statistical analysis").replace("## AE and benchmark interpretation", "## Anomaly detection and architectural comparison")
 
 if __name__=='__main__':

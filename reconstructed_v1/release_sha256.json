@@ -11,13 +11,13 @@
   "run_reconstructed_experiments.py": "932800bb59a8a850b44a26417c7d7e1487b9b82094ed78388bc8837255d07980",
   "summarize_reconstructed_study.py": "ea5b0a9ca2ee089e8ef15554a0b16d86a80dcf497c69b063d30068697db061c2",
   "validate_reconstructed_results.py": "0056eefb24302e643b90556c796f6033ab9bb563fc93f7a3b29a28f6a21c28ea",
-  "README_REVISION.md": "62c5d17e7e8a6e78849f26738509d7344f0bf1ecd0ffbfdaf3319456930b4c81",
+  "README_REVISION.md": "8c72b0814b16fc7e598b92d57d740927ac57e0861a85479556174b1f03bbe850",
   "requirements.installed.txt": "193c0583d2ce43c6b59f2590888ece5b069e5a0131a5cbc51c16f25df7088e5e",
-  "REVISION_RESULTS.md": "b9835b99e2277f26c8aafbde217474e8fa21cd7afb0e68a66fdce1fddc9b7c21",
+  "REVISION_RESULTS.md": "c8fc2bac560957e5d8edc536b270bd9c453ee3fab557cd0f8f38d68766ab5a8f",
   "REVISION_AUDIT_INITIAL.md": "c4a01cdf4b78b43c4aeb3ccc40c9a142013cf0965ae8f0328f8896775f1019d3",
   "reconstructed_v1/DATA_DICTIONARY.md": "a827b89caa8bcf3d4a42eb59a32819e1559445beda8888b8857255ced8a32a02",
   "reconstructed_v1/progress.json": "9f3c1a4576a96c1616b109fceac46e48829c8c8cb5e55dd7ee7ad2716f100351",
-  "reconstructed_v1/RECONSTRUCTED_RESULTS.md": "b9835b99e2277f26c8aafbde217474e8fa21cd7afb0e68a66fdce1fddc9b7c21",
+  "reconstructed_v1/RECONSTRUCTED_RESULTS.md": "c8fc2bac560957e5d8edc536b270bd9c453ee3fab557cd0f8f38d68766ab5a8f",
   "reconstructed_v1/checkpoints/A1_1024.pt": "953cb2dc4002c9863355d311d3325d87b73539cc4aca0c02f42aec13308be036",
   "reconstructed_v1/checkpoints/A1_123.pt": "c402ca6b39f732a6b42983f99ebb3c087a35cd4417c773faaaaabd552f6fd83c",
   "reconstructed_v1/checkpoints/A1_42.pt": "afae298dc41ad64e9a131385621aa6319dd96b21cb598b2cba3aef54c6e49ccd",
@@ -668,5 +668,5 @@
   "results/data_audit/split_counts.csv": "4371597ee4c0a8036d7f51089da397a0e9e163cbdce9f0ddfbd5afe9db96e38f",
   "results/data_audit/windows_per_segment.csv": "6c482793941d562206d570e3bf914773bc090912555203eb5f796d4b1838b821",
   "results/active_learning/controls/random_acquisition_schedule.csv": "0223a45e6c9e8c5c7cfbf27be88182f4262f6d84c63afbe214d27091c599b29c",
-  "polish_revision_writing.py": "6d0d95bd2472486cfa7cd2c97c87b4414cd018bc633ef81b74f147bb68245877"
+  "polish_revision_writing.py": "13897528314076fc20cd2a10182d4301b41504289d56531cc35630b4002123d6"
 }

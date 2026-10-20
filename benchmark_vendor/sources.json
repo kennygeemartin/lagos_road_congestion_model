@@ -1,0 +1,35 @@
+{
+  "repositories": [
+    {
+      "name": "STGCN",
+      "commit": "4ab75ab69af354d6a0ab86aefa082d389b187127",
+      "files": {
+        "LICENSE": "031929beb30f101c90b81608898e4caffbdfd9ecd7c3f174361c89a6bf6fd04e",
+        "models/layers.py": "d718984032b4b120853885345fbd0a0942b56764f46c4c0d60069b2bbeca761a",
+        "models/base_model.py": "252bdbaabf6d7cf5b2c2a544a789e02afaafb64ac7444b0763ebbb339445c5b2",
+        "utils/math_graph.py": "71d5fdfefd38e3c7d035220cb8a0cd66f18117e490aa1728e767a33a6f313620",
+        "main.py": "da920014a7c67717fbb4b3428ac185f9400a65aeaa602fdd9c62f64d6740b613"
+      }
+    },
+    {
+      "name": "DCRNN",
+      "commit": "602afd9d767d3aa1c9b3eac51710d6aeee12c227",
+      "files": {
+        "LICENSE": "007d75a4e82ba61d90bd280b93e15525b7fdaf3bb1ca1d7e65544c3a01ae340e",
+        "model/dcrnn_cell.py": "7bf4d77b3568d9ae79861e2e5270da13897de2b5f719d51e6dfffa9b853f00a3",
+        "model/dcrnn_model.py": "7d18d921618b1a48ec0a8234baf9714976aac4264011f987965115ab291e9de4",
+        "data/model/dcrnn_la.yaml": "af60b00372c8aefe4ffade8b7e53c54ff391cb17ea7cdf690e6c10db3584bbfb"
+      }
+    },
+    {
+      "name": "GraphWaveNet",
+      "commit": "6b162e80c59a1d494809252eca055cff93dc66b1",
+      "files": {
+        "LICENSE": "3fa452a8f852344684e83271874f89e0414c3faa0c6c0d26b148392840ea56f6",
+        "model.py": "b2fd1d7acd32d9c923f2a262c63d16e1493f174fe253a5d7dafb5e26baf5e6f8",
+        "engine.py": "89dd28d10a46882efd1859b444ecc8247a97a276b87439ba57aad70bcbde8682"
+      }
+    }
+  ],
+  "GraphWaveNet_compatibility_patch": "Replace three nn.Conv1d declarations with nn.Conv2d: four-dimensional tensors and two-dimensional kernels; all architectural widths, blocks and operators retained."
+}

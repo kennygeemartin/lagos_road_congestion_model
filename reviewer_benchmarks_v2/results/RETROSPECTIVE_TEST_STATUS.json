@@ -1,0 +1,18 @@
+{
+  "previously_examined": true,
+  "used_for_training": false,
+  "used_for_epoch_selection": false,
+  "original_final_selection_unchanged": true,
+  "benchmarks": [
+    "STGCN",
+    "DCRNN",
+    "GraphWaveNet"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ]
+}

@@ -1,0 +1,17 @@
+test_all_architectures_have_finite_forward_and_gradients (test_reviewer_benchmarks.ReviewerArchitectures.test_all_architectures_have_finite_forward_and_gradients) ... ok
+test_chebyshev_uses_order_two (test_reviewer_benchmarks.ReviewerArchitectures.test_chebyshev_uses_order_two) ... ok
+test_directed_random_walk_and_diffusion_numerics (test_reviewer_benchmarks.ReviewerArchitectures.test_directed_random_walk_and_diffusion_numerics) ... ok
+test_same_seed_initialization_and_state_replay (test_reviewer_benchmarks.ReviewerArchitectures.test_same_seed_initialization_and_state_replay) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 13.148s
+
+OK
+test_all_checkpoints_replay_their_saved_predictions (__main__.CompletedReviewerBenchmarks.test_all_checkpoints_replay_their_saved_predictions) ... ok
+test_all_fits_use_only_initial_training_and_fixed_validation (__main__.CompletedReviewerBenchmarks.test_all_fits_use_only_initial_training_and_fixed_validation) ... ok
+test_all_predictions_have_correct_targets_and_metrics (__main__.CompletedReviewerBenchmarks.test_all_predictions_have_correct_targets_and_metrics) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 5.626s
+
+OK

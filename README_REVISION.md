@@ -44,3 +44,17 @@ The result compiler prepares tables, paired comparisons, figures, CPU measuremen
 `tests/test_protocol.py` checks the initial source archive's prerequisites. Use `run_reconstructed_checks.py` for the completed study's 23-check gate; the two checks have different scopes.
 
 The release contains CPU measurements from the actual execution environment. Public archival deposition and a permanent identifier are subsequent release steps.
+
+## Full reviewer benchmark extension
+
+The full STGCN, DCRNN and Graph WaveNet architectures have been fitted across all five seeds. Read the root-level `REVIEWER_BENCHMARK_RESULTS.md` and `BENCHMARK_PROTOCOL.md`. Code is in `reviewer_benchmark_models.py`, `run_reviewer_benchmarks.py`, `summarize_reviewer_benchmarks.py` and `validate_reviewer_benchmarks.py`. Reference sources and licenses are retained in `benchmark_vendor/`.
+
+`reviewer_benchmarks_v2/` contains the separate pre-training protocol lock, fitted checkpoints, epoch logs, 30 prediction files, paired tests, matched model-only timings and completed check records. The extension passed seven architecture/artifact checks. Per-epoch `.resume.pt` files support local interruption recovery and are omitted from distribution; final best-epoch checkpoints are included.
+
+```powershell
+.venv/Scripts/python.exe run_reviewer_benchmarks.py --prepare
+.venv/Scripts/python.exe -u run_reviewer_benchmarks.py
+.venv/Scripts/python.exe validate_reviewer_benchmarks.py
+```
+
+All architectures use the same 14 features and 12-hour one-step task. Original study inputs, partitions and selected-model predictions remain fixed. Long execution pauses appear in some epoch wall-clock durations, so those durations describe observed execution history rather than uninterrupted compute cost. Matched model-only profiling is provided separately.

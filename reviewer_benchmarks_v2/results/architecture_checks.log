@@ -1,0 +1,9 @@
+test_all_architectures_have_finite_forward_and_gradients (test_reviewer_benchmarks.ReviewerArchitectures.test_all_architectures_have_finite_forward_and_gradients) ... ok
+test_chebyshev_uses_order_two (test_reviewer_benchmarks.ReviewerArchitectures.test_chebyshev_uses_order_two) ... ok
+test_directed_random_walk_and_diffusion_numerics (test_reviewer_benchmarks.ReviewerArchitectures.test_directed_random_walk_and_diffusion_numerics) ... ok
+test_same_seed_initialization_and_state_replay (test_reviewer_benchmarks.ReviewerArchitectures.test_same_seed_initialization_and_state_replay) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 5.163s
+
+OK
