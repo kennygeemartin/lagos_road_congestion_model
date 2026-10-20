@@ -1,0 +1,16 @@
+# Local environments and generated caches
+.venv/
+.uv-cache/
+.mpl-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+github_publish/
+# Distribution archives are generated locally
+*.zip
+# Credentials and local configuration
+.env
+.env.*
+*.pem
+*.key

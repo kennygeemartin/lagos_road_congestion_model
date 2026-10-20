@@ -1,0 +1,60 @@
+test_degree_preservation_and_connectivity_on_supplied_topology (test_controls.Controls.test_degree_preservation_and_connectivity_on_supplied_topology) ... ok
+test_entropy_selector_uses_probabilities_only (test_controls.Controls.test_entropy_selector_uses_probabilities_only) ... ok
+test_random_acquisition_equal_budget_without_replacement (test_controls.Controls.test_random_acquisition_equal_budget_without_replacement) ... ok
+test_nonoverlapping_band_edges_and_scale (test_evaluation.Evaluation.test_nonoverlapping_band_edges_and_scale) ... ok
+test_pairing_must_include_exact_seeds (test_evaluation.Evaluation.test_pairing_must_include_exact_seeds) ... ok
+test_scs_exact_differences (test_evaluation.Evaluation.test_scs_exact_differences) ... ok
+test_time_cluster_bootstrap_perfect_prediction (test_evaluation.Evaluation.test_time_cluster_bootstrap_perfect_prediction) ... ok
+test_ae_scores_are_mse_and_backbones_are_seeded (test_models.ModelContracts.test_ae_scores_are_mse_and_backbones_are_seeded) ... ok
+test_identity_graph_has_no_neighbor_effect (test_models.ModelContracts.test_identity_graph_has_no_neighbor_effect) ... ok
+test_lstm_is_node_permutation_equivariant (test_models.ModelContracts.test_lstm_is_node_permutation_equivariant) ... ok
+test_chronological_partition_order (test_protocol.ProtocolEvidence.test_chronological_partition_order) ... ok
+test_disjoint_complete_splits (test_protocol.ProtocolEvidence.test_disjoint_complete_splits) ... ok
+test_gate_feature_and_timestamp_provenance (test_protocol.ProtocolEvidence.test_gate_feature_and_timestamp_provenance) ... FAIL
+test_gate_pooled_sequence_count (test_protocol.ProtocolEvidence.test_gate_pooled_sequence_count) ... FAIL
+test_gate_train_only_proxy_thresholds (test_protocol.ProtocolEvidence.test_gate_train_only_proxy_thresholds) ... FAIL
+test_graph_and_binary_normalization (test_protocol.ProtocolEvidence.test_graph_and_binary_normalization) ... ok
+test_protocol_snapshot_unchanged (test_protocol.ProtocolEvidence.test_protocol_snapshot_unchanged) ... ok
+test_scaler_train_only (test_protocol.ProtocolEvidence.test_scaler_train_only) ... skipped 'No fitted scaler or executable feature assembly supplied'
+test_seed_prediction_reproducibility (test_protocol.ProtocolEvidence.test_seed_prediction_reproducibility) ... skipped 'No trained model and saved predictions supplied'
+test_source_files_unchanged (test_protocol.ProtocolEvidence.test_source_files_unchanged) ... ok
+test_threshold_fixed (test_protocol.ProtocolEvidence.test_threshold_fixed) ... ok
+test_validation_test_prediction_integrity (test_protocol.ProtocolEvidence.test_validation_test_prediction_integrity) ... skipped 'No independently saved validation/test prediction files supplied'
+
+======================================================================
+FAIL: test_gate_feature_and_timestamp_provenance (test_protocol.ProtocolEvidence.test_gate_feature_and_timestamp_provenance)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\kenny\Documents\Projects\JOURNALS\2026\SCOPUS\Road Congestion and Accident Prediction\Road Congestion Reproducability package\tests\test_protocol.py", line 67, in test_gate_feature_and_timestamp_provenance
+    self.assertTrue(self.status['ready_to_lock'],'Original Metro chronology, sequence mapping and 14-feature assembly unresolved')
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : Original Metro chronology, sequence mapping and 14-feature assembly unresolved
+
+======================================================================
+FAIL: test_gate_pooled_sequence_count (test_protocol.ProtocolEvidence.test_gate_pooled_sequence_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\kenny\Documents\Projects\JOURNALS\2026\SCOPUS\Road Congestion and Accident Prediction\Road Congestion Reproducability package\tests\test_protocol.py", line 60, in test_gate_pooled_sequence_count
+    self.assertEqual(check['status'],'PASS',check['detail'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'FAIL' != 'PASS'
+- FAIL
++ PASS
+ : 168,400 pooled segment windows versus 8,420 claimed
+
+======================================================================
+FAIL: test_gate_train_only_proxy_thresholds (test_protocol.ProtocolEvidence.test_gate_train_only_proxy_thresholds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\kenny\Documents\Projects\JOURNALS\2026\SCOPUS\Road Congestion and Accident Prediction\Road Congestion Reproducability package\tests\test_protocol.py", line 64, in test_gate_train_only_proxy_thresholds
+    self.assertEqual(check['status'],'PASS',check['detail'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'FAIL' != 'PASS'
+- FAIL
++ PASS
+ : 20/20 nodes differ from initial-train-only quantiles
+
+----------------------------------------------------------------------
+Ran 22 tests in 4.728s
+
+FAILED (failures=3, skipped=3)

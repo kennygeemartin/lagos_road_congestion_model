@@ -1,0 +1,72 @@
+{
+  "ready_to_lock": false,
+  "protocol_locked": false,
+  "source_split_modified": false,
+  "checks": [
+    {
+      "check": "archived_split_exact_8420_union",
+      "status": "PASS",
+      "blocking": true,
+      "detail": "Unique archived IDs cover 0..8419"
+    },
+    {
+      "check": "split_sizes",
+      "status": "PASS",
+      "blocking": true,
+      "detail": "{'initial_train': 4420, 'fixed_validation': 589, 'acquisition_pool': 885, 'final_test': 2526}"
+    },
+    {
+      "check": "ordinal_chronological_order",
+      "status": "PASS",
+      "blocking": true,
+      "detail": "Ordinal ordering; inherited Metro timestamps unavailable"
+    },
+    {
+      "check": "20_nodes_34_directed_edges",
+      "status": "PASS",
+      "blocking": true,
+      "detail": "20 nodes; 34 directed edges"
+    },
+    {
+      "check": "pooled_window_reconciliation",
+      "status": "FAIL",
+      "blocking": true,
+      "detail": "168,400 pooled segment windows versus 8,420 claimed"
+    },
+    {
+      "check": "sequence_segment_mapping_present",
+      "status": "FAIL",
+      "blocking": true,
+      "detail": "Split rows contain target_time_index but no segment_id"
+    },
+    {
+      "check": "original_Metro_and_timestamps_present",
+      "status": "FAIL",
+      "blocking": true,
+      "detail": "Only reconstructed ordinal temporal proxy supplied"
+    },
+    {
+      "check": "archived_proxy_thresholds_train_only",
+      "status": "FAIL",
+      "blocking": true,
+      "detail": "20/20 nodes differ from initial-train-only quantiles"
+    },
+    {
+      "check": "proxy_has_positive_examples",
+      "status": "PASS",
+      "blocking": true,
+      "detail": "20/50000 positive labels; incident agreement recall cannot be assessed without positives"
+    },
+    {
+      "check": "target_formula_matches_manuscript",
+      "status": "PASS",
+      "blocking": true,
+      "detail": "0 inconsistent generated targets"
+    }
+  ],
+  "environment": {
+    "python": "3.14.7 (main, Sep  1 2026, 14:17:30) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "downstream_experiments": "NOT RUN: failed prerequisite data/protocol checks; no manuscript metrics copied"
+}

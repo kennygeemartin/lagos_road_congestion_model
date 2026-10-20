@@ -1,0 +1,13 @@
+quantity,count,provenance
+original_Metro_rows_claimed,48204,manuscript claim; source absent
+original_Metro_rows_verified,,not available
+proxy_temporal_rows,8432,reconstructed proxy
+generated_segment_rows,168640,observed
+pooled_segment_sequences_L12,168400,computed contiguous next-step windows
+network_snapshot_sequences_L12,8420,alternative unit; requires declaration
+archived_split_sequence_rows,8420,observed
+synthetic_sensor_rows,50000,observed
+sensor_rows_in_initial_train_time_support,26244,computed; no segment-to-sequence mapping supplied
+archived_proxy_positive_rows,20,observed
+train_threshold_recomputed_positive_rows_all_times,20,computed diagnostic only
+all_data_threshold_recomputed_positive_rows,20,computed diagnostic only

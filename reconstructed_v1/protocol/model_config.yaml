@@ -1,0 +1,112 @@
+{
+  "autoencoder": {
+    "input_dim": 14,
+    "latent_dim": 8,
+    "encoder": [
+      14,
+      32,
+      16,
+      8
+    ],
+    "decoder": [
+      8,
+      16,
+      32,
+      14
+    ],
+    "activation": "ReLU",
+    "lr": 0.001,
+    "batch_size": 64,
+    "optimizer": "Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "epochs": 100,
+    "patience": 10
+  },
+  "lstm": {
+    "layers": 2,
+    "hidden_units": 128,
+    "dropout": 0.2,
+    "lr": 0.0005,
+    "batch_size": 32,
+    "sequence_length": 12,
+    "epochs": 80,
+    "output": "scalar 0-10",
+    "class_centres": [
+      1,
+      3,
+      5,
+      7,
+      9
+    ],
+    "temperature_tau": 1.0
+  },
+  "gcn": {
+    "nodes": 20,
+    "directed_edges": 34,
+    "message_passing": "symmetrized A with self-loops",
+    "hidden_dims": [
+      64,
+      32
+    ],
+    "dropout": 0.2,
+    "lr": 0.001,
+    "batch_size": 64,
+    "epochs": 50,
+    "patience": 10
+  },
+  "active_learning": {
+    "entropy_epsilon": 1e-12,
+    "pool": 885,
+    "queries_per_iteration": 295,
+    "iterations": 3,
+    "remove_after_query": true,
+    "refinement_epochs": 10
+  },
+  "training": {
+    "device": "cpu",
+    "torch_threads": 4,
+    "lstm_patience": 10,
+    "lstm_batch_unit": "32 whole-network snapshots (640 segment sequences) per optimizer batch",
+    "graph_batch_unit": "64 snapshots",
+    "loss": "MSE on original 0-10 scale",
+    "ae_normal_fit": "initial-training input hours with ratio<.4; first80% fit,last20% training-internal early-stop",
+    "graph_training": "two-stage; frozen same-seed LSTM predictions plus last observed 14 features; A4 also anomaly",
+    "active_retraining": "same 10 final-epoch LSTM and GCN epochs per round; warm start; same optimizer-reset policy for both selectors",
+    "active_entropy": "mean node entropy from LSTM ordinal probabilities, query one whole snapshot",
+    "active_backbone_dropout": "same deterministic per-stage seed for both selectors",
+    "final_selection": "minimum five-seed mean validation MAE among A1-A4 and entropy/random stages; no test selection"
+  },
+  "benchmark": {
+    "name": "STGCN-lite",
+    "channels": 32,
+    "epochs": 80,
+    "patience": 10,
+    "lr": 0.0005,
+    "adaptation": "single T-G-T block, first-order graph convolution; omits higher-order filters and second block",
+    "evaluation": "fixed validation only; does not reopen final test"
+  },
+  "baseline": {
+    "HA": "node x hour-of-week mean from training target hours, node-mean fallback",
+    "persistence": "last observed hourly congestion score",
+    "ARIMA": "(2,1,2), fixed train-only parameters; rolling one-step state update on observed past validation values",
+    "arima_maxiter": 100
+  },
+  "statistics": {
+    "test": "paired two-sided t across five model seeds",
+    "correction": "Holm within each experiment family across all reported pairwise metric tests",
+    "bootstrap": "2000 circular temporal block resamples; 24-hour blocks; all nodes clustered; five fitted seeds held fixed"
+  },
+  "latency": {
+    "warmup": 20,
+    "runs": 100,
+    "batch_sizes": [
+      1,
+      20
+    ],
+    "batch_unit": "networks; each network contains20segments",
+    "hardware": "actual CPU only; not RTX3090; not directly comparable to historical GPU latency"
+  }
+}

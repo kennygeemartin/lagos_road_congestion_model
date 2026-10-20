@@ -1,0 +1,11 @@
+check,status,blocking,detail
+archived_split_exact_8420_union,PASS,True,Unique archived IDs cover 0..8419
+split_sizes,PASS,True,"{'initial_train': 4420, 'fixed_validation': 589, 'acquisition_pool': 885, 'final_test': 2526}"
+ordinal_chronological_order,PASS,True,Ordinal ordering; inherited Metro timestamps unavailable
+20_nodes_34_directed_edges,PASS,True,20 nodes; 34 directed edges
+pooled_window_reconciliation,FAIL,True,"168,400 pooled segment windows versus 8,420 claimed"
+sequence_segment_mapping_present,FAIL,True,Split rows contain target_time_index but no segment_id
+original_Metro_and_timestamps_present,FAIL,True,Only reconstructed ordinal temporal proxy supplied
+archived_proxy_thresholds_train_only,FAIL,True,20/20 nodes differ from initial-train-only quantiles
+proxy_has_positive_examples,PASS,True,20/50000 positive labels; incident agreement recall cannot be assessed without positives
+target_formula_matches_manuscript,PASS,True,0 inconsistent generated targets

@@ -1,0 +1,33 @@
+{
+  "score_ratio_breakpoints": [
+    0,
+    0.4,
+    0.6,
+    0.75,
+    0.9,
+    1.0
+  ],
+  "score_breakpoints": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "clip_score": [
+    0,
+    10
+  ],
+  "index_multiplier": 10,
+  "class_score_boundaries": [
+    2,
+    4,
+    6,
+    8
+  ],
+  "proxy_rule": "speed < train-node-p10 AND volume_intensity > train-node-p90 AND delay > 15",
+  "ae_threshold": 0.015,
+  "threshold_policy": "fixed; do not optimize on validation in locked train-only protocol",
+  "archived_thresholds_valid_for_rerun": false
+}

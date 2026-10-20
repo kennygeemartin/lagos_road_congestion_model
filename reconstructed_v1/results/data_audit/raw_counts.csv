@@ -1,0 +1,6 @@
+quantity,count,status
+original_Metro_rows_claimed_in_legacy_manuscript,48204,not verified; original vector absent
+reconstructed_proxy_hours,8432,observed reconstructed data
+generated_node_hours,168640,observed reconstructed data
+network_snapshots,8420,"computed L12, stride1, 20 nodes per snapshot"
+segment_targets,168400,computed; NOT 8420 pooled scalar targets

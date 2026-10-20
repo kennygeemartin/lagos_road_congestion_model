@@ -1,0 +1,16 @@
+{
+  "run_seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "seeded_components": [
+    "weight_initialization",
+    "shuffling",
+    "dropout",
+    "synthetic_noise_generation"
+  ],
+  "reconstruction_seed": 42
+}

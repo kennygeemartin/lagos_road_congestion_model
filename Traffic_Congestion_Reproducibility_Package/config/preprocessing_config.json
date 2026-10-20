@@ -1,0 +1,31 @@
+{
+  "sequence_length_hours": 12,
+  "stride_hours": 1,
+  "total_sequences": 8420,
+  "initial_train": 4420,
+  "fixed_validation": 589,
+  "acquisition_pool": 885,
+  "final_test": 2526,
+  "scaling": "Min-Max fit on initial training partition only",
+  "missing_values": "training-derived imputation/interpolation",
+  "features": [
+    "average_speed",
+    "travel_delay",
+    "hour_of_day",
+    "day_of_week",
+    "peak_off_peak",
+    "rolling_mean",
+    "rolling_standard_deviation",
+    "volume_intensity"
+  ],
+  "volume_intensity_formula": "q_i_t / segment_length_km",
+  "volume_intensity_units": "veh/(h km)",
+  "physical_density_formula_not_used": "q_i_t / (mean_speed_kmh * lanes)",
+  "proxy_anomaly_rule": {
+    "speed": "below segment-specific 10th percentile",
+    "volume_intensity": "above segment-specific 90th percentile",
+    "travel_delay_min": ">15",
+    "logic": "AND"
+  },
+  "ae_threshold": 0.015
+}

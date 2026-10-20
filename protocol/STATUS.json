@@ -1,0 +1,5 @@
+{
+  "locked": false,
+  "split_unit": "UNRESOLVED: network snapshot versus segment sequence",
+  "warning": "Evidence snapshot only; DO NOT TRAIN until failed checks and feature mapping are resolved"
+}

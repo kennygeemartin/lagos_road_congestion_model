@@ -1,0 +1,11 @@
+{
+  "locked": true,
+  "study": "new reconstructed-data simulation",
+  "authorized": "user yes following offered reconstructed-study option",
+  "original_study_reproduced": false,
+  "chronology": "ordinal proxy",
+  "sample_unit": "20-node network snapshot",
+  "source_split_modified": false,
+  "total_snapshots": 8420,
+  "total_node_targets": 168400
+}

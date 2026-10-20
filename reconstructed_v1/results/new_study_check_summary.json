@@ -1,0 +1,9 @@
+{
+  "scope": "new reconstructed-v1 scientific/implementation gate",
+  "total": 23,
+  "passed": 23,
+  "failed": 0,
+  "errors": 0,
+  "skipped": 0,
+  "legacy_audit": "Original archive prerequisite failures remain separately recorded; not part of this new study gate"
+}

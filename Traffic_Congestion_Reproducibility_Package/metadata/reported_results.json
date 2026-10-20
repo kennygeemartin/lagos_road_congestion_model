@@ -1,0 +1,51 @@
+{
+  "ae": {
+    "mse": "0.012 \u00b1 0.001",
+    "precision": "0.91 \u00b1 0.02",
+    "recall": "0.88 \u00b1 0.03",
+    "f1": "0.89 \u00b1 0.02"
+  },
+  "lstm_with_anomaly": {
+    "accuracy_percent": "89.7 \u00b1 0.7",
+    "mae_index": "3.05 \u00b1 0.11",
+    "rmse_index": "4.12 \u00b1 0.10"
+  },
+  "lstm_gcn": {
+    "mae_index": "2.41 \u00b1 0.09",
+    "rmse_index": "3.36 \u00b1 0.08",
+    "spatial_correlation": "0.89 \u00b1 0.02"
+  },
+  "active_learning_validation": [
+    [
+      "Initial Model",
+      "89.7 \u00b1 0.7",
+      "3.05 \u00b1 0.11",
+      "4.12 \u00b1 0.10"
+    ],
+    [
+      "Iteration 1",
+      "91.3 \u00b1 0.6",
+      "2.78 \u00b1 0.10",
+      "3.85 \u00b1 0.09"
+    ],
+    [
+      "Iteration 2",
+      "93.1 \u00b1 0.5",
+      "2.52 \u00b1 0.09",
+      "3.48 \u00b1 0.08"
+    ],
+    [
+      "Iteration 3",
+      "94.5 \u00b1 0.4",
+      "2.30 \u00b1 0.08",
+      "3.12 \u00b1 0.07"
+    ]
+  ],
+  "final_test": {
+    "n": 2526,
+    "accuracy_percent": "94.5 \u00b1 0.4",
+    "mae_index": "2.30 \u00b1 0.08",
+    "rmse_index": "3.12 \u00b1 0.07"
+  },
+  "latency_ms": "145 \u00b1 12"
+}

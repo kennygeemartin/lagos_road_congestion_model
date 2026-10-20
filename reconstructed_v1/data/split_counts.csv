@@ -1,0 +1,5 @@
+partition,snapshots,node_targets,proxy_positives,proxy_node_hours
+initial_train,4420,88400,17,88400
+fixed_validation,589,11780,4,11780
+acquisition_pool,885,17700,3,17700
+final_test,2526,50520,11,50520

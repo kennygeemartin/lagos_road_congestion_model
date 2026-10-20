@@ -1,0 +1,19 @@
+{
+  "Traffic_Congestion_Reproducibility_Package\\MANIFEST.csv": "fa2c62f1ef610a9351047923cf372a1715876b434cf5c49035734d0bbba67277",
+  "Traffic_Congestion_Reproducibility_Package\\README.md": "6076a7322263753695f70fa134db795250d6cc1bc53d76bfdaab44cbdbaaea4a",
+  "Traffic_Congestion_Reproducibility_Package\\checkpoints\\checkpoint_manifest.json": "1d3ab6463372f3b7e0809eeb5cd8c84862bb735a40cfaecd9f807e2edd49225d",
+  "Traffic_Congestion_Reproducibility_Package\\checkpoints\\README_CHECKPOINTS.txt": "19f2399096b1a694d7b216004fed2a4c249d0812da00675f251e1c70e4705367",
+  "Traffic_Congestion_Reproducibility_Package\\config\\generation_config.json": "fc423234c1517dd0f25ffdedf907d65e5917d74d40e1f0ae4e6e6043d8bc9be1",
+  "Traffic_Congestion_Reproducibility_Package\\config\\model_config.json": "6af611160c94d1e6ae33ccc4c5ad0370f3fbea9ba68b594c71812ad88d23ad9b",
+  "Traffic_Congestion_Reproducibility_Package\\config\\preprocessing_config.json": "611499d8237f994f0358319180278715ba1851bfa5f907524ef8ab7be42301fb",
+  "Traffic_Congestion_Reproducibility_Package\\data\\generated_segment_volume_series.csv": "c7352731d2c89e083c5f1ffca054d5c01110f5e71a1c77e338e1a72bf25f5750",
+  "Traffic_Congestion_Reproducibility_Package\\data\\synthetic_sensor_dataset.csv": "30ba5d5ee8873203706693440c7ff29676777136b0d4058588324e317421426b",
+  "Traffic_Congestion_Reproducibility_Package\\data\\temporal_template_proxy.csv": "6db67310a0c29f93f98102a65beda3da973948c74e9c13b4ba9952de940bf9f5",
+  "Traffic_Congestion_Reproducibility_Package\\graph\\graph_edges.csv": "6df51118da38d4e4dc16df290570a27aa83acc795d39e1504c36a5ebabd6c127",
+  "Traffic_Congestion_Reproducibility_Package\\graph\\graph_nodes.csv": "597b3ab69d3b785d313ddffc8a5fe0001e1803e32744babbd1351f50f0867393",
+  "Traffic_Congestion_Reproducibility_Package\\labels\\proxy_anomaly_labels.csv": "81ec0007bb5f3a74ecb866268c6bc85fcb6878b9b1d4a5b6768d93e7c71417e2",
+  "Traffic_Congestion_Reproducibility_Package\\metadata\\reported_results.json": "9db9ffcaabf34219f17183b171fbc9a0907babb0697561f8fcc9a0d159dc8f9b",
+  "Traffic_Congestion_Reproducibility_Package\\metadata\\run_seeds.json": "d07f6e7d8408ac2a4592091b296b88cabd2bfb6d085be49ff93dddbac440a3e3",
+  "Traffic_Congestion_Reproducibility_Package\\splits\\active_learning_label_budget.csv": "4db8425662e5c9bbc8b7fa64a0c41fc30dcbaccc7ca2922e765173f63fb66fb8",
+  "Traffic_Congestion_Reproducibility_Package\\splits\\chronological_split_indices.csv": "1b9f503137d14cc6e3fe46925817d2658b13b66d3395d7e83999ec5be44ca48f"
+}

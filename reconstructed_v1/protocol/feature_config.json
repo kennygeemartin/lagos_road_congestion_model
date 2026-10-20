@@ -1,0 +1,35 @@
+{
+  "columns": [
+    "speed_kmh",
+    "travel_delay_min",
+    "acceleration_ms2",
+    "gps_speed_noise_kmh",
+    "sensor_count",
+    "hour_sin",
+    "hour_cos",
+    "weekday_sin",
+    "weekday_cos",
+    "peak_indicator",
+    "rolling_ratio_mean_12",
+    "rolling_ratio_std_12",
+    "volume_intensity_veh_h_per_km",
+    "volume_capacity_ratio"
+  ],
+  "L": 12,
+  "stride": 1,
+  "sample_unit": "one 12-hour whole-network snapshot; 20 node targets",
+  "chronological_index": "ordinal reconstructed proxy time_index; NOT original Metro date_time",
+  "sensor_aggregation": "arithmetic mean per node/hour; no claimed one-minute trajectory chronology",
+  "missing_sensors": "causal forward-fill within node; initial fallback to node-specific TRAIN median",
+  "sensor_count": "observed records per node/hour, zero if absent; not forward-filled",
+  "rolling": "inclusive trailing 12 observed hourly ratios; ddof=0; min_periods=1",
+  "scaler": "one global min-max transform per feature; only unique initial-training INPUT hours",
+  "scaler_fit_hours": [
+    0,
+    4430
+  ],
+  "out_of_range_features": "not clipped",
+  "seeds": "fixed reconstructed data; only model/selector seeds vary",
+  "static_nigerian_context": "not used; unavailable in archive",
+  "source_generation": "archived reconstructed proxy and archived generated volumes retained unchanged"
+}

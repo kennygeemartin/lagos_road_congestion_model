@@ -1,0 +1,4 @@
+metric,ci_lower,ci_upper,bootstrap_repeats,block_hours,unit,seed_policy
+accuracy_percent,74.10596793349167,75.48863816310373,2000,24,network snapshot; all 20 nodes clustered,mean metric over five fixed fitted seeds
+mae_index,4.6913121342659,4.794161939620972,2000,24,network snapshot; all 20 nodes clustered,mean metric over five fixed fitted seeds
+rmse_index,6.314388716220856,6.459826707839966,2000,24,network snapshot; all 20 nodes clustered,mean metric over five fixed fitted seeds

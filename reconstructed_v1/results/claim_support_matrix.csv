@@ -1,0 +1,8 @@
+claim,supported,evidence
+AE anomaly feature improves MAE,False,ablation/paired_tests.csv
+graph adjustment improves MAE in both backbone comparisons,False,ablation/paired_tests.csv
+original topology improves MAE/RMSE/SCS over rewiring,False,graph_validity/significance_tests.csv
+entropy label-efficiency at a lower budget,False,active_learning/paired_tests_entropy_vs_random.csv
+independent held-out evaluation exists,True,final_eval/prediction_integrity.csv
+A5 has fewer parameters and no higher mean MAE than STGCN-lite,False,benchmark/params_runtime.csv and benchmark_by_seed.csv
+RTX3090 latency verified,False,CPU measurements only

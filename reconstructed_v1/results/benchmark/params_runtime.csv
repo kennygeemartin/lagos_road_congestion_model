@@ -1,0 +1,7 @@
+experiment,pipeline_parameters,measured_mean_end_to_end_ms,latency_scope,component_validation_inference_seconds
+A1,205953,,not separately benchmarked,see raw metrics; graph rows measure head only
+A2,208759,,not separately benchmarked,see raw metrics; graph rows measure head only
+A3,209090,,not separately benchmarked,see raw metrics; graph rows measure head only
+A4,211960,8.3260362,"JSON engineered-window ingestion, scaling, model pipeline",see raw metrics; graph rows measure head only
+A5,211960,,not separately benchmarked,see raw metrics; graph rows measure head only
+STGCN_lite,10049,4.446681,"JSON engineered-window ingestion, scaling, model pipeline",see raw metrics; graph rows measure head only

@@ -1,0 +1,17 @@
+{
+  "experiment": "A1",
+  "criterion": "minimum mean validation MAE over five seeds",
+  "validation_mean_mae": {
+    "A1": 4.6795141220092775,
+    "A2": 4.682780456542969,
+    "A5_entropy_885": 4.900437736511231,
+    "A5_random_885": 4.902995872497558,
+    "A5_random_295": 4.933225345611572,
+    "A5_entropy_295": 4.94458703994751,
+    "A5_entropy_590": 4.947395896911621,
+    "A3": 4.960614776611328,
+    "A4": 4.997363185882568,
+    "A5_random_590": 5.006149482727051
+  },
+  "final_test_used_for_selection": false
+}

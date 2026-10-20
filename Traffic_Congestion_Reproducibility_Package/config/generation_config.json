@@ -1,0 +1,39 @@
+{
+  "segment_volume_formula": "q_i_t = C_i * clip[(0.25 + 0.70*u_t)*m_t + e_i_t, 0, 1.20]",
+  "peak_multiplier": {
+    "07:00-10:00": 1.15,
+    "16:00-19:00": 1.2,
+    "otherwise": 1.0
+  },
+  "noise": {
+    "distribution": "Gaussian",
+    "mean": 0.0,
+    "std": 0.05
+  },
+  "capacity_veh_h": {
+    "Expressway": 2000,
+    "Arterial": 1200,
+    "Feeder": 800
+  },
+  "sensor_free_flow_speed_kmh": {
+    "Expressway": {
+      "mean": 80,
+      "std": 10
+    },
+    "Arterial": {
+      "mean": 60,
+      "std": 8
+    },
+    "Feeder": {
+      "mean": 45,
+      "std": 7
+    }
+  },
+  "acceleration_bounds_ms2": [
+    -2.5,
+    2.5
+  ],
+  "gps_speed_noise_std_kmh": 5,
+  "synthetic_sensor_records": 50000,
+  "provenance_note": "u_t in the original study was normalized from the external Metro series. The exact extracted vector was not supplied, so this package uses a deterministic reconstructed proxy temporal vector."
+}

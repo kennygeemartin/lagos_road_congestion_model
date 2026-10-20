@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640">
+<rect width="1000" height="640" fill="white"/>
+<text x="40" y="35" font-family="Arial" font-size="23">Supplied package: measured data accounting</text>
+<rect x="35" y="55" width="930" height="56" rx="8" fill="#fee2e2"/>
+<text x="55" y="89" font-family="Arial" font-size="18">Original Metro: 48,204 rows claimed; source absent</text>
+<path d="M500 112 v20 m-5 -5 l5 5 l5 -5" stroke="#64748b" fill="none"/>
+<rect x="35" y="135" width="930" height="56" rx="8" fill="#e0f2fe"/>
+<text x="55" y="169" font-family="Arial" font-size="18">Reconstructed temporal proxy: 8,432 ordinal hours</text>
+<path d="M500 192 v20 m-5 -5 l5 5 l5 -5" stroke="#64748b" fill="none"/>
+<rect x="35" y="215" width="930" height="56" rx="8" fill="#e0f2fe"/>
+<text x="55" y="249" font-family="Arial" font-size="18">20 segments x 8,432 hours = 168,640 rows</text>
+<path d="M500 272 v20 m-5 -5 l5 5 l5 -5" stroke="#64748b" fill="none"/>
+<rect x="35" y="295" width="930" height="56" rx="8" fill="#fee2e2"/>
+<text x="55" y="329" font-family="Arial" font-size="18">Per-segment L=12 windows: 168,400; claimed pooled total: 8,420</text>
+<path d="M500 352 v20 m-5 -5 l5 5 l5 -5" stroke="#64748b" fill="none"/>
+<rect x="35" y="375" width="930" height="56" rx="8" fill="#fef3c7"/>
+<text x="55" y="409" font-family="Arial" font-size="18">Alternative: 8,420 network snapshots x 20 nodes = 168,400 targets</text>
+<path d="M500 432 v20 m-5 -5 l5 5 l5 -5" stroke="#64748b" fill="none"/>
+<rect x="35" y="455" width="930" height="56" rx="8" fill="#fef3c7"/>
+<text x="55" y="489" font-family="Arial" font-size="18">Split rows: 4,420 / 589 / 885 / 2,526; segment unit unresolved</text>
+<path d="M500 512 v20 m-5 -5 l5 5 l5 -5" stroke="#64748b" fill="none"/>
+<rect x="35" y="535" width="930" height="56" rx="8" fill="#fee2e2"/>
+<text x="55" y="569" font-family="Arial" font-size="18">Protocol gate FAILED: resolve provenance, sample unit and labels</text>
+</svg>

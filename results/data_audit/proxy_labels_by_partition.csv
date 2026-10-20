@@ -1,0 +1,5 @@
+partition,sensor_rows,positive_labels
+initial_train,26176,9
+fixed_validation,3413,2
+acquisition_pool,5323,2
+final_test,15020,7

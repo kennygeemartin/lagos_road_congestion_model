@@ -1,0 +1,14 @@
+{
+  "seed": 42,
+  "experiment": "A1",
+  "independent_full_training": true,
+  "architecture": "2 layers, hidden128, dropout0.2; maximum80 epochs with patience10",
+  "epochs_executed": 33,
+  "training_seconds": 976.8945056999801,
+  "max_abs_prediction_difference_index": 0.0,
+  "tolerance_index": 0.0001,
+  "identical_validation_ids": true,
+  "passed": true,
+  "test_used": false,
+  "excluded_from_five_seed_summary": true
+}

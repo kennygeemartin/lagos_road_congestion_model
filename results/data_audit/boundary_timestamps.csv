@@ -1,0 +1,5 @@
+partition,first_target_index,last_target_index,first_input_index,last_input_index,actual_calendar_timestamp
+initial_train,12,4431,0,4430,UNAVAILABLE: ordinal proxy index only
+fixed_validation,4432,5020,4420,5019,UNAVAILABLE: ordinal proxy index only
+acquisition_pool,5021,5905,5009,5904,UNAVAILABLE: ordinal proxy index only
+final_test,5906,8431,5894,8430,UNAVAILABLE: ordinal proxy index only

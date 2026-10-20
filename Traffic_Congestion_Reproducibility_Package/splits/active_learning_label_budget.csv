@@ -1,0 +1,5 @@
+stage,new_labels,cumulative_labels,remaining_pool,note
+Initial Model,0,0,885,No acquisition labels
+Iteration 1,295,295,590,Selected samples removed after querying
+Iteration 2,295,590,295,295 additional previously unqueried samples
+Iteration 3,295,885,0,Acquisition pool exhausted

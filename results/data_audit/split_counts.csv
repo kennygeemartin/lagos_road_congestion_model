@@ -1,0 +1,5 @@
+partition,actual,expected,expanded_if_one_network_snapshot_per_row
+initial_train,4420,4420,88400
+fixed_validation,589,589,11780
+acquisition_pool,885,885,17700
+final_test,2526,2526,50520

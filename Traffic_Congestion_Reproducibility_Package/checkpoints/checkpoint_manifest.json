@@ -1,0 +1,21 @@
+{
+  "weights_included": false,
+  "reason": "Original trained state_dict/checkpoint files were not supplied. Recreating them would require model retraining, so no random/fabricated weights are presented as original.",
+  "expected_models": [
+    "AE",
+    "LSTM initial",
+    "LSTM AL1",
+    "LSTM AL2",
+    "LSTM AL3",
+    "GCN"
+  ],
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "architecture_config": "../config/model_config.json",
+  "reported_metrics": "../metadata/reported_results.json"
+}

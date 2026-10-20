@@ -1,0 +1,28 @@
+test_degree_preservation_and_connectivity_on_supplied_topology (test_controls.Controls.test_degree_preservation_and_connectivity_on_supplied_topology) ... ok
+test_entropy_selector_uses_probabilities_only (test_controls.Controls.test_entropy_selector_uses_probabilities_only) ... ok
+test_random_acquisition_equal_budget_without_replacement (test_controls.Controls.test_random_acquisition_equal_budget_without_replacement) ... ok
+test_nonoverlapping_band_edges_and_scale (test_evaluation.Evaluation.test_nonoverlapping_band_edges_and_scale) ... ok
+test_pairing_must_include_exact_seeds (test_evaluation.Evaluation.test_pairing_must_include_exact_seeds) ... ok
+test_scs_exact_differences (test_evaluation.Evaluation.test_scs_exact_differences) ... ok
+test_time_cluster_bootstrap_perfect_prediction (test_evaluation.Evaluation.test_time_cluster_bootstrap_perfect_prediction) ... ok
+test_ae_scores_are_mse_and_backbones_are_seeded (test_models.ModelContracts.test_ae_scores_are_mse_and_backbones_are_seeded) ... ok
+test_identity_graph_has_no_neighbor_effect (test_models.ModelContracts.test_identity_graph_has_no_neighbor_effect) ... ok
+test_lstm_is_node_permutation_equivariant (test_models.ModelContracts.test_lstm_is_node_permutation_equivariant) ... ok
+test_proxy_thresholds_train_only_and_fixed_ae_theta (test_reconstructed_protocol.ReconstructedProtocol.test_proxy_thresholds_train_only_and_fixed_ae_theta) ... ok
+test_scaler_is_initial_input_only (test_reconstructed_protocol.ReconstructedProtocol.test_scaler_is_initial_input_only) ... ok
+test_sensor_fill_uses_only_past_observations (test_reconstructed_protocol.ReconstructedProtocol.test_sensor_fill_uses_only_past_observations) ... ok
+test_source_provenance_and_graph (test_reconstructed_protocol.ReconstructedProtocol.test_source_provenance_and_graph) ... ok
+test_splits_chronology_and_sample_unit (test_reconstructed_protocol.ReconstructedProtocol.test_splits_chronology_and_sample_unit) ... ok
+test_acquisition_cannot_select_validation_or_test (test_reconstructed_training.TrainingContracts.test_acquisition_cannot_select_validation_or_test) ... ok
+test_new_protocol_locked_and_legacy_left_unlocked (test_reconstructed_training.TrainingContracts.test_new_protocol_locked_and_legacy_left_unlocked) ... ok
+test_same_seed_same_optimization_predictions (test_reconstructed_training.TrainingContracts.test_same_seed_same_optimization_predictions) ... ok
+test_all_graph_runs_have_all_seeds_and_ten_rewires (validate_reconstructed_results.CompletedStudy.test_all_graph_runs_have_all_seeds_and_ten_rewires) ... ok
+test_equal_budget_no_replacement_and_identical_final_oracle_set (validate_reconstructed_results.CompletedStudy.test_equal_budget_no_replacement_and_identical_final_oracle_set) ... ok
+test_independent_full_training_repeat_reproduces_predictions (validate_reconstructed_results.CompletedStudy.test_independent_full_training_repeat_reproduces_predictions) ... ok
+test_same_full_checkpoint_reproduces_saved_validation_predictions (validate_reconstructed_results.CompletedStudy.test_same_full_checkpoint_reproduces_saved_validation_predictions) ... ok
+test_saved_predictions_are_separate_and_correctly_aligned (validate_reconstructed_results.CompletedStudy.test_saved_predictions_are_separate_and_correctly_aligned) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 10.277s
+
+OK

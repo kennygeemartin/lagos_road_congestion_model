@@ -1,0 +1,12 @@
+{
+  "selected": "A1",
+  "seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "test_snapshots": 2526,
+  "test_node_targets": 50520
+}

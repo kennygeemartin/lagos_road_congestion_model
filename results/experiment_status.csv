@@ -1,0 +1,12 @@
+family,status,detail
+data_audit,IMPLEMENTED AND RUN,"CSV tables, target verification, threshold provenance, split audit, flowchart"
+protocol,IMPLEMENTED EVIDENCE SNAPSHOT; NOT LOCKED,"Source and protocol SHA256 manifests, split NPZ, binary normalized graph, failing prerequisites"
+ae,MODEL COMPONENT IMPLEMENTED; EXPERIMENT NOT RUN,14-column assembly and aligned sensor/time mapping absent; original thresholds use all data
+baselines,NOT IMPLEMENTED OR RUN,"Depends on resolved sample unit, model-ready features and locked development protocol"
+ablation,MODEL COMPONENTS IMPLEMENTED; EXPERIMENT NOT RUN,AE/LSTM/GCN modules available; no A1-A5 experiment orchestration or model-ready data
+graph_validity,CONTROLS IMPLEMENTED AND GENERATED; MODELS NOT RUN,50 degree-preserving binary graph controls; no trained G0/G1/G2 performance comparisons
+active_learning,SELECTORS IMPLEMENTED; EXPERIMENT NOT RUN,Five 3x295 random schedules and entropy selector; label unit and retraining orchestration unresolved
+final_eval,EVALUATOR IMPLEMENTED; NO STUDY PREDICTIONS,"Per-seed val/test metrics, clustered bootstrap and plots available only after genuine fitted predictions"
+benchmark,STGCN-LITE COMPONENT IMPLEMENTED; EXPERIMENT NOT RUN,Disclosed one-block first-order approximation; no study benchmark performance
+latency,MEASUREMENT FUNCTION IMPLEMENTED; STUDY BENCHMARK NOT RUN,Actual ingestion/feature assembly absent; no CUDA available in installed runtime
+public_release,LOCAL REVIEW BUNDLE ONLY; NOT PUBLISHED,Protocol gate fails; no genuine checkpoints/predictions or archival destination

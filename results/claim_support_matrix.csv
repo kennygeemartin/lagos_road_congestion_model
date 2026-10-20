@@ -1,0 +1,10 @@
+claim,required_evidence,status,revision_action
+AE anomaly feature helps,A2 vs A1 paired-seed comparison,UNSUPPORTED: no independent predictions,Describe AE purpose; remove numerical contribution claim until rerun
+LSTM beats classical baselines,HA/PF/ARIMA/LSTM development table,UNSUPPORTED: metadata only,Do not reuse historical metrics as new validation
+Spatial adjustment helps,"A4 vs A2, A3 vs A1, G1 vs G0/G2; fixed-edge SCS",UNSUPPORTED: controls exist; models not trained,Binary adjacency implementation now available; outcome unknown
+Active learning improves label efficiency,Entropy vs random at matched budget,UNSUPPORTED: selectors exist; no fitted learning curves,Retain explicit no-random-control limitation until genuine rerun
+Useful lightweight data-scarce model,"STGCN benchmark, parameters and latency",UNSUPPORTED: model components only,Frame as proposed simulation pipeline pending comparisons
+Held-out performance is credible,Independent per-seed predictions and temporal bootstrap,UNSUPPORTED: reported_results.json is not prediction evidence,Do not repeat 94.5/2.30/3.12 as verified results
+Five-minute update feasible,100 real pipeline runs after 20 warmups on declared hardware,UNSUPPORTED: no study latency benchmark,Remove universal sub-100ms requirement; report only measured actual hardware
+Archive has stated split sizes and topology,Observed split/graph files,SUPPORTED,"4,420/589/885/2,526 disjoint ordinal split IDs; 20 nodes, 34 directed edges"
+Generated target matches stated piecewise rule,"All 168,640 generated rows",SUPPORTED,Zero target/class formula mismatches detected

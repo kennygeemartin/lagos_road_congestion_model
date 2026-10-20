@@ -1,0 +1,24 @@
+{
+  "hardware": "actual CPU; CPU-only PyTorch; no RTX3090 claim",
+  "processor": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+  "platform": "Windows-11-10.0.22631-SP0",
+  "torch": "2.14.1+cpu",
+  "torch_threads": 4,
+  "dtype": "float32",
+  "batch1": "one 20-segment network update",
+  "batch20": "20 simultaneous network updates (400 segment sequences)",
+  "includes": [
+    "JSON parsing of engineered 12-hour window",
+    "float32 conversion",
+    "train-fitted scaling",
+    "model stages"
+  ],
+  "excludes": [
+    "physical sensor transport",
+    "external network I/O",
+    "raw-record aggregation and rolling feature maintenance",
+    "dashboard rendering"
+  ],
+  "update_cycle_seconds": 300,
+  "sub100ms_requirement_claimed": false
+}

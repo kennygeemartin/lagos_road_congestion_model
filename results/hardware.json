@@ -1,0 +1,7 @@
+{
+  "cuda_available": false,
+  "torch": "2.14.1+cpu",
+  "cpu": "Intel64 Family 6 Model 142 Stepping 12, GenuineIntel",
+  "cuda_devices": [],
+  "rtx3090_benchmark_performed": false
+}
